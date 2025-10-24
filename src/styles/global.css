@@ -1,1 +1,75 @@
 @import "tailwindcss";
+@import "@fontsource/roboto";
+@import "@fontsource/open-sans";
+
+@layer base {
+  html, body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #3B3758;
+    color: #ffffff;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+@layer components {
+  .font-roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .font-opensans {font-family: 'Open Sans', sans-serif;}
+
+  .bg-blanco {
+    background-color: #ffffff;
+  }
+
+  .bg-azul-oscuro {
+    background-color: #002D3C;
+  }
+
+  .bg-verde-neon {
+    background-color: #8EE000;
+  }
+
+  .bg-morado {
+    background-color: #6B2A8C;
+  }
+
+  .bg-body {
+    background-color: #3B3758;
+  }
+
+  .bg-gris-claro {
+    background-color: #E0E0E0;
+  }
+
+  .bg-gris-oscuro {
+    background-color: #333333;
+  }
+
+  .bg-rojo {
+    background-color: #E53935;
+  }
+
+  .bg-amarillo {
+    background-color: #FFB300;
+  }
+
+  .border-card {
+    border-color: #1A4B5C;
+  }
+
+  .text-blanco {
+    color: #ffffff;
+  }
+
+  .text-amarillo {
+    color: #FFB300;
+  }
+
+  .text-rojo {
+    color: #E53935;
+  }
+}

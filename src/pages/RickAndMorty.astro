@@ -24,17 +24,17 @@ const characters: CharactersInterface[] = data.results
 
 
 
-    <div class="container mx-auto gap-6 bg-purple-800">
-        <div class="grid grid-cols-4 p-1 m-1 gap-2 bg-purple-850">
+    <div class="container mx-auto gap-6 bg-morado font-opensans">
+        <div class="grid grid-cols-4 p-1 m-1 gap-2">
             {characters.map((character)=>(
-                <div class="justify-items-center  bg-purple-900 text-white font-bold rounded-2xl p-1 mt-1 mb-1 text-center items-center justify-center">
-                    <div class="flex justify-center"> <Image class="rounded-full" src={character.image} alt={character.name} width={300} height={300}/></div>
-                    <h2 class="text-xl text-green-200"> [{character.status}]</h2>
-                    <h2 class="text-xl">Nombre: {character.name}</h2>
-                    <h2 class="text-xl">Especie: {character.species}</h2>
-                    <h2 class="text-xl">Genero: {character.gender}</h2>
-                    <h2 class="text-xl">Origen: <a href={character.origin.url}>{character.origin.name}</a></h2>
-                    <div class="pb-1 pt-1 mt-1 mb-1 max-w-xs mx-auto rounded-full bg-green-400 text-black text-lg"><a href="/">Ver detalles</a></div>
+                <div class="justify-items-center border  text-white font-bold rounded-2xl p-1 mt-1 mb-1 text-center items-center justify-center ">
+                    <div class="flex justify-center"> <Image class="border px-1 py-1 rounded-full border-green-600" src={character.image} alt={character.name} width={300} height={300}/></div>
+                    <h2 class="text-xl text-green-200 font-roboto"> [{character.status}]</h2>
+                    <h2 class="text-xl font-roboto">Nombre: {character.name}</h2>
+                    <h2 class="text-xl font-roboto">Especie: {character.species}</h2>
+                    <h2 class="text-xl font-roboto">Genero: {character.gender}</h2>
+                    <h2 class="text-xl font-roboto">Origen: <a href={character.origin.url}>{character.origin.name}</a></h2>
+                    <div class="pb-1 pt-1 mt-1 mb-1 max-w-xs mx-auto rounded-full bg-verde-neon text-black text-lg"><a href="/">Ver detalles</a></div>
                 </div>
             ))}
         </div>
