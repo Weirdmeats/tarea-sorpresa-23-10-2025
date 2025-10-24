@@ -1,0 +1,23 @@
+---
+import "../styles/global.css"
+import FooterComponent from "../components/FooterComponent.astro";
+import HeaderComponent from "../components/HeaderComponent.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body>
+		<HeaderComponent />
+		<main class="flex flex-col min-h-screen">
+			<slot />
+		</main>
+		<FooterComponent />
+	</body>
+</html>
